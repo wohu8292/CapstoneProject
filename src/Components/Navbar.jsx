@@ -1,17 +1,18 @@
 import React from 'react'
 import school_logo from '../assets/boulder-one-line.avif'
+import { MdHome } from "react-icons/md";
 
 const Navbar = () => {
     return (
-        <div>
+        <div className='font-arimo'>
           {/* upper Navbar */}
           <div className='p-3'>
-            <div className='container flex justify-between items-center'>
+            <div className=' container flex justify-between items-center'>
               {/* homepage Logo */}
               <div>
                 <a href="#">
-                  <img src={school_logo} alt="Logo"/>
-                </a>
+                  <img src={school_logo} alt="Logo" height={242}/>
+                </a> 
               </div>
     
               {/* searchBar and orderButton */}
@@ -21,20 +22,23 @@ const Navbar = () => {
             </div>
           </div>
     
-          {/* middle Navbar */}
-          <div className='bg-black text-white p-3'>
-            <div>Sustainability in Projects</div>
-            <div>College of Engineering and Applied Sciences</div>
+          {/* mid Navbar */}
+          <div className='bg-primaryDarkgray text-white p-4'>
+            <div className='container'>  
+              <div className='text-xl mb-2'>Sustainability in Projects</div>
+              <div className='text-xs'>College of Engineering and Applied Sciences</div>
+            </div>
           </div>
     
           {/* lower Navbar */}
-          <div>
-            <ul className='sm:flex hidden items-center gap-4 w-[100%] justify-evenly'>
-              <li>nav1</li>
-              <li>nav2</li>
-              <li>nav3</li>
-              <li>nav4</li>
-              <li>nav5</li>
+          <div className='container'>
+            <ul className='sm:flex hidden items-center w-[100%] gap-5 m-4 text-[13px]'>
+              <li><a href='#'><MdHome size={20}/></a></li>
+              <li><a href='#'>Brainstorming</a></li>
+              <li><a href='#'>Prototyping</a></li>
+              <li><a href='#'>Iteration</a></li>
+              <li><a href='#'>Deliverables</a></li>
+              <li><a href='#'>Resources</a></li>
             </ul>
           </div>
     

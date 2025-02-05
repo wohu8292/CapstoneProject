@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
-import Body from './Components/Body'
+import Home from './Components/Home'
 
 
 function App() {
@@ -11,13 +11,7 @@ function App() {
   return(
     <div>
       <Navbar />
-      <Body />
-      <Body />
-      <Body />
-      <Body />
-      <Body />
-      <Body />
-
+      <Home />
       <Footer />
     </div>
   )

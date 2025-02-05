@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.section{
+    @apply pt-12 pb-12
+}
+
+.container{
+    @apply px-4 mx-auto lg:px-12 lg:max-w-6xl
+}
