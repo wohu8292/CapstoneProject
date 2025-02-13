@@ -1,7 +1,7 @@
 import React from 'react'
-import HomeBody from './HomeBody'
+import Text_Image from './Text_Image'
 
-const navList = [
+const subPages = [
     {
         id: 1,
         label: 'Brainstorming',
@@ -16,14 +16,10 @@ const navList = [
         href: '#Iteration'
     }, {
         id: 4,
-        label: 'Reviews',
-        href: '#Reviews'
-    }, {
-        id: 5,
         label: 'Deliverables',
         href: '#Deliverables'
     }, {
-        id: 6,
+        id: 5,
         label: 'Resources',
         href: '#Resources'
     }
@@ -35,7 +31,7 @@ const Home = () => {
             <div className='container'>
                 <h1 className='mb-5 font-bold text-3xl'>Home</h1>
                 <div>
-                    {navList.map((object, index) => (<HomeBody name={object.label}/>))}
+                    {subPages.map((object, index) => (<Text_Image name={object.label}/>))}
                 </div>
             </div>
         </section>
