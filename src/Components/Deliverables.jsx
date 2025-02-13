@@ -29,12 +29,12 @@ const Deliverables = () => {
     <section className='section'>
         <div className='container'>
             <h1 className='mb-5 font-bold text-3xl'>Deliverables</h1>
-            <div>
+            <div className='mt-20'>
                 <Text_Image />
             </div>
 
             {/* cards */}
-            <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 my-24 cursor-pointer'>
+            <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 my-32 cursor-pointer'>
                 {cardData.map((cardInfo) => (
                     <div key={cardInfo.id} className='p-4 bg-primaryLightGray/50 shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105'>
                         <img src={cardInfo.img} alt="" className='w-full h-40 object-cover'/>
@@ -47,7 +47,7 @@ const Deliverables = () => {
             </div>
 
             {/* body */}
-            <div className='mt-14 grid grid-rows-2 gap-9'>
+            <div className='my-32 grid grid-rows-2 gap-24'>
                 <Text_Image name="How to be more sustainable in brainstorming"/>
                 <Image_Text name="How success in brainstorming is defined "/>
             </div>

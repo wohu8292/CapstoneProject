@@ -3,7 +3,7 @@ import exampleImg from '../assets/exampleImg.jpg'
 
 const HomeBody = ({name}) => {
   return (
-    <div className='mb-3 px-4 sm:px-6 lg:px-8'>
+    <div className='mb-3 px-4 sm:px-6 lg:px-8 mt-20'>
         <div className='grid md:grid-cols-2 items-center gap-6'>
             <div className='flex flex-col justify-center text-center md:text-left md:order-1 order-2'>
                 <h2 className='text-lg font-bold py-2'>{name}</h2>
@@ -12,7 +12,7 @@ const HomeBody = ({name}) => {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
             </div>
-            <div className='order-1 md:order-2 flex justify-center'>
+            <div className='order-1 md:order-2 flex justify-end'>
               <img src={exampleImg} alt="#" width={124} className='w-32' />
             </div>
         </div>
