@@ -34,17 +34,13 @@ const Resources = () => {
             </div>
 
             {/* cards */}
-            <div className='flex justify-between w-4/8 my-24 gap-5'>
-                {cardData.map((cardInfo)=>(
-                    <div
-                    key={cardInfo.id}
-                    className='w-96'>
-                        <div className='p-5 rounded-xl bg-primaryLightGray/50 flex flex-col h-full'>
-                            <img src={cardInfo.img} alt="" className='rounded-xl w-full h-40 object-cover'/>
-                            <div className='mt-3'>
-                                <h3 className='font-semibold text-lg'>{cardInfo.title}</h3>
-                                <p className='text-sm text-gray-600 mt-3'>{cardInfo.text}</p>
-                            </div>
+            <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 my-24 cursor-pointer'>
+                {cardData.map((cardInfo) => (
+                    <div key={cardInfo.id} className='p-4 bg-primaryLightGray/50 shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105'>
+                        <img src={cardInfo.img} alt="" className='w-full h-40 object-cover'/>
+                        <div className='p-4'>
+                            <h3 className='font-semibold text-lg text-gray-800'>{cardInfo.title}</h3>
+                            <p className='text-sm text-gray-600 mt-3'>{cardInfo.text}</p>
                         </div>
                     </div>
                 ))}
