@@ -1,7 +1,7 @@
 import React from 'react'
 import exampleImg from '../assets/exampleImg.jpg'
-import Text_Image from './Text_Image'
-import Image_Text from './Image_Text'
+import Accordian from './Accordian'
+
 
 const cardData = [
     {
@@ -29,28 +29,9 @@ const Resources = () => {
     <section className='section'>
         <div className='container'>
             <h1 className='mb-5 font-bold text-3xl'>Resources</h1>
-            <div>
-                <Text_Image />
-            </div>
-
-            {/* cards */}
-            <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 my-20 cursor-pointer'>
-                {cardData.map((cardInfo) => (
-                    <div key={cardInfo.id} className='p-4 bg-primaryLightGray/50 shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105'>
-                        <img src={cardInfo.img} alt="" className='w-full h-40 object-cover'/>
-                        <div className='p-4'>
-                            <h3 className='font-semibold text-lg text-gray-800'>{cardInfo.title}</h3>
-                            <p className='text-sm text-gray-600 mt-3'>{cardInfo.text}</p>
-                        </div>
-                    </div>
-                ))}
-            </div>
-
-            {/* body */}
-            <div className='my-32 grid grid-rows-2 gap-24'>
-                <Text_Image name="How to be more sustainable in brainstorming"/>
-                <Image_Text name="How success in brainstorming is defined "/>
-            </div>
+                <div className='mt-20'>
+                    <Accordian/>
+                </div>
         </div>
     </section>
   )

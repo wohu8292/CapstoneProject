@@ -34,7 +34,7 @@ const Deliverables = () => {
             </div>
 
             {/* cards */}
-            <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 my-32 cursor-pointer'>
+            <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-20 cursor-pointer px-8'>
                 {cardData.map((cardInfo) => (
                     <div key={cardInfo.id} className='p-4 bg-primaryLightGray/50 shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105'>
                         <img src={cardInfo.img} alt="" className='w-full h-40 object-cover'/>
