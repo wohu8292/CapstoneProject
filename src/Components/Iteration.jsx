@@ -2,25 +2,26 @@ import React from 'react'
 import exampleImg from '../assets/exampleImg.jpg'
 import Text_Image from './Text_Image'
 import Image_Text from './Image_Text'
+import Text from './Text'
 
 const cardData = [
     {
         id:1,
         img:exampleImg,
-        title:'What is iteration',
-        text:'Brainstorming is a creative problem-solving technique where individuals or groups generate a wide range of ideas through open, unfiltered discussions. It encourages participants to think freely and share diverse perspectives to explore potential solutions.'
+        title:'What is prototyping',
+        text:'Brainstorming is a creative problem-solving technique where individuals or groups generate a wide range of ideas through open, unfiltered discussions.'
     },
     {
         id:2,
         img:exampleImg,
-        title:'Ways to iteration',
-        text:'Brainstorming can be done through methods like mind mapping, free writing, group discussions, or using prompts to spark ideas. Techniques such as asking "what if" questions, role-playing, or combining and modifying existing ideas can also help generate creative solutions.'
+        title:'Ways to prototyping',
+        text:'Brainstorming can be done through methods like mind mapping, free writing, group discussions, or using prompts to spark ideas.'
     },
     {
         id:2,
         img:exampleImg,
-        title:'Ways to iteration',
-        text:'Brainstorming can be done through methods like mind mapping, free writing, group discussions, or using prompts to spark ideas. Techniques such as asking "what if" questions, role-playing, or combining and modifying existing ideas can also help generate creative solutions.'
+        title:'Ways to prototyping',
+        text:'Brainstorming can be done through methods like mind mapping, free writing, group discussions, or using prompts to spark ideas.'
     }
 ]
 
@@ -30,7 +31,7 @@ const Iteration = () => {
         <div className='container'>
             <h1 className='mb-5 font-bold text-3xl'>Iteration</h1>
             <div>
-                <Text_Image />
+                <Text />
             </div>
 
             {/* cards */}

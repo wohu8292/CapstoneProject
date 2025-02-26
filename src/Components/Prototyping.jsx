@@ -2,6 +2,7 @@ import React from 'react'
 import exampleImg from '../assets/exampleImg.jpg'
 import Text_Image from './Text_Image'
 import Image_Text from './Image_Text'
+import Text from './Text'
 
 const cardData = [
     {
@@ -30,7 +31,7 @@ const Prototyping = () => {
         <div className='container'>
             <h1 className='mb-5 font-bold text-3xl'>Prototyping</h1>
             <div>
-                <Text_Image />
+                <Text />
             </div>
 
             {/* cards */}
